@@ -17,24 +17,24 @@
             Select the data subset to visualize (quarter)
             <span id="level"></span> Increase/decrease graph opacity
 
-            <input type="button" id="incrementOpacity" value="++" onclick="incrementOpacity()" />
-            <input type="button" id="decrementOpacity" value="--" onclick="decrementOpacity()" /> Freeze graph layout <input type="button" id="freezeLayout" value="Freeze/Unfreeze" onclick="freezeLayout()" /> Fix all nodes' positions <input type="button" id="fixLayout" value="Fix/Unfix" onclick="fixLayout()" />
+            <input type="button" id="incrementOpacity" value="++" onClick="incrementOpacity()" />
+            <input type="button" id="decrementOpacity" value="--" onClick="decrementOpacity()" /> Freeze graph layout <input type="button" id="freezeLayout" value="Freeze/Unfreeze" onClick="freezeLayout()" /> Fix all nodes' positions <input type="button" id="fixLayout" value="Fix/Unfix" onClick="fixLayout()" />
         </div>
 
 
         <div class="left1" id="state-graph-div">
             <div class="mymargin">
                 <b>Graph Controls - </b> Increase/decrease graph size
-                <input type="button" value="++" onclick="incrementGraph(0)" />
-                <input type="button" value="--" onclick="decrementGraph(0)" />
+                <input type="button" value="++" onClick="incrementGraph(0)" />
+                <input type="button" value="--" onClick="decrementGraph(0)" />
                 <br/> Enter user IDs (comma-separated) <input type="text" id="userID">
-                <input type="button" id="highlightUserID" value="Highlight" onclick="highlightUserID()" />
+                <input type="button" id="highlightUserID" value="Highlight" onClick="highlightUserID()" />
 <!--                <br/>-->
                 
             Group Highlight: 
-            <input type="button" value="team2" onclick="highlightGroup(1)" />
-            <input type="button" value="team3" onclick="highlightGroup(2)" />           
-            <input type="button" value="All" onclick="highlightGroup(0)" /> 
+            <input type="button" value="team2" onClick="highlightGroup(1)" />
+            <input type="button" value="team3" onClick="highlightGroup(2)" />           
+            <input type="button" value="All" onClick="highlightGroup(0)" /> 
                 <!--
             <input type="button" value="Node size = Popularity" onclick="changeStateNodeSizeType(1)" /> 
             <input type="button" value="Node size = Look significant" onclick="changeStateNodeSizeType(2)" /> 
@@ -49,9 +49,9 @@
 -->
                 <br/> Enter K
                 <input type="text" id="number-highlight">
-                <input type="button" id="toggleFrequentTrajectories" value="Highlight K most frequent" onclick="toggleHighlightFreqTrajectories()" />
-                <input type="button" id="toggleKthTrajectories" value="Highlight K-th most frequent" onclick="toggleKthTrajectories()" />
-                <input type="button" id="clearHighlight" value="Clear all highlights" onclick="clearHighlight()" /><br/>
+                <input type="button" id="toggleFrequentTrajectories" value="Highlight K most frequent" onClick="toggleHighlightFreqTrajectories()" />
+                <input type="button" id="toggleKthTrajectories" value="Highlight K-th most frequent" onClick="toggleKthTrajectories()" />
+                <input type="button" id="clearHighlight" value="Clear all highlights" onClick="clearHighlight()" /><br/>
                 <hr/>
 
                 <b>
@@ -82,21 +82,21 @@
             <div class="mymargin">
 
                 <b>Graph Controls - </b> Increase/decrease graph size
-                <input type="button" value="++" onclick="incrementGraph(1)" />
-                <input type="button" value="--" onclick="decrementGraph(1)" />
-                Toggle showing links <input type="button" id="toggleShowLinks" value="Show/Hide" onclick="toggleShowLinks()" />
+                <input type="button" value="++" onClick="incrementGraph(1)" />
+                <input type="button" value="--" onClick="decrementGraph(1)" />
+                Toggle showing links <input type="button" id="toggleShowLinks" value="Show/Hide" onClick="toggleShowLinks()" />
                 <br/> Enter sequence index to highlight (comma separated)
                 <input type="text" id="playtrace-index">
-                <input type="button" id="highlightNodeID" value="Highlight" onclick="highlightNodeID()" />
+                <input type="button" id="highlightNodeID" value="Highlight" onClick="highlightNodeID()" />
 <!--                These functions will highlight the first and last indices in the sequence. Keep the  color the same in the sequence-->
-                <input type="button" id="highlightNodeID_first" value="first" onclick="highlightNodeID_index(0)" />
-                <input type="button" id="highlightNodeID_last" value="last" onclick="highlightNodeID_index(-1)" />
-                <input type="button" id="highlightNodeID_reverse" value="reverse" onclick="highlightNodeID(true)" />
+                <input type="button" id="highlightNodeID_first" value="first" onClick="highlightNodeID_index(0)" />
+                <input type="button" id="highlightNodeID_last" value="last" onClick="highlightNodeID_index(-1)" />
+                <input type="button" id="highlightNodeID_reverse" value="reverse" onClick="highlightNodeID(true)" />
                 
-                <input type="button" value="Clear all highlights" onclick="clearHighlight()" /> 
+                <input type="button" value="Clear all highlights" onClick="clearHighlight()" /> 
                 <br/> Enter sequence index to show info
                 <input type="text" id="playtrace-show-info">
-                <input type="button" value="Show" onclick="showInfoNodeID()" />
+                <input type="button" value="Show" onClick="showInfoNodeID()" />
 
                 <hr/>
                 <b>Data Info</b> - Total number of sequences (nodes): <b><label id="num-nodes"></label></b>
@@ -110,8 +110,8 @@
             <div class="mymargin">
                 <b>Sequence Node Info</b> (updated when node selected) - ID = <label id="selected-node-index"></label> <br/> 
                 Player IDs having this pattern (<label id="num-players-sequence"></label> players): <label id="players-sequence"></label><br/> 
-                Action sequence: <span style="color:purple"><b><label id="actionseq-info"></label></b></span><br/><br/> 
                 Complete sequence (<label id="num-states-in-trajectory"></label> states): <span style="color:red"><b><label id="infobox"></label></b></span><br/>
+                Action sequence: <span style="color:purple"><b><label id="actionseq-info"></label></b></span><br/><br/> 
                 <!--
 
             Details: <span style="color:blue"><b><label id="infobox-details"></label></b></span>
