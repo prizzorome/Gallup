@@ -82,6 +82,20 @@ text.end{
     stroke:none;
 }
 
+/*
+paola 181001: added next style to highlight round nodes
+*/
+.round {
+    stroke: #680000;
+    fill: #3db757;
+}
+text.round{
+    fill: #680000;
+    stroke:none;
+}
+
+
+
 .statelink{
     stroke-opacity: .7;
 /*        fill-opacity: 0;*/
