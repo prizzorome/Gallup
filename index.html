@@ -910,7 +910,7 @@
                 .attr("id", function(d, i) {
                     return 'behaviornode' + i;
                 }).on("dblclick", dblclick)
-                .on("mouseover", displayInfo)
+                //.on("mouseover", displayInfo) // paola 181126: Huy suggested to comment this line to avoid that the display information changes when hovering the mouse
                 .call(behaviordrag);
 
             nodeEnter.append("circle")
