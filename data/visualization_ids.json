@@ -1,4 +1,6 @@
 [
+"first2batches_rounds+risk",
+"first2batches_risk+round_sequential",
 "first2batches_risk+round_similarity",
 "first2batches_risk",
 "first2batches_risk+st_dev",
