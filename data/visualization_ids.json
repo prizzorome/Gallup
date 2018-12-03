@@ -1,4 +1,6 @@
 [
+"first3batches_round+risk+stDev+voters",
+"first3batches_round+risk+risk_proneness",
 "first2batches_rounds+risk",
 "first2batches_risk+round_sequential",
 "first2batches_risk+round_similarity",
